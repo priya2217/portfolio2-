@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Priya K | Full Stack Developer</title>
+  <meta name="description" content="Priya K — Full Stack Developer from Chennai."/>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg"/>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div id="cur"></div>
+  <div id="cur-ring"></div>
+  <nav id="navbar">
+    <div class="nav-logo"><span>Priya</span>kannan</div>
+    <button class="nav-toggle" id="nav-toggle"><i class="fas fa-bars"></i></button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+      <li><a href="#experience"><i class="fas fa-briefcase"></i> Experience</a></li>
+      <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
+      <li><a href="#projects"><i class="fas fa-folder-open"></i> Projects</a></li>
+      <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
+      <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+    </ul>
+    <div class="nav-status"><span class="status-dot"></span>open_to_work</div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="blob blob1"></div><div class="blob blob2"></div><div class="blob blob3"></div>
+    <div class="hero-inner">
+      <div class="hero-left">
+        <div class="hero-greeting"><i class="fas fa-terminal"></i> Hello, World!</div>
+        <h1 class="hero-title">Hi, I'm <span class="accent">Priya K</span></h1>
+        <p class="hero-sub">I'm a <strong id="typewriter"></strong><span class="type-cursor">|</span></p>
+        <div class="hero-code">
+          <div class="code-bar"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span><span class="code-filename">developer.js</span></div>
+          <div class="code-body">
+            <span class="c-cmt">// who am i?</span><br>
+            <span class="c-key">const</span> <span class="c-var">developer</span> = {<br>
+            &nbsp;&nbsp;<span class="c-key">name</span>: <span class="c-str">'Priya K'</span>,<br>
+            &nbsp;&nbsp;<span class="c-key">role</span>: <span class="c-str">'Full Stack Developer'</span>,<br>
+            &nbsp;&nbsp;<span class="c-key">location</span>: <span class="c-str">'Chennai, India'</span>,<br>
+            &nbsp;&nbsp;<span class="c-key">skills</span>: [<span class="c-str">'React'</span>, <span class="c-str">'Node.js'</span>, <span class="c-str">'Python'</span>, <span class="c-str">'SQL'</span>],<br>
+            &nbsp;&nbsp;<span class="c-key">hardWorker</span>: <span class="c-bool">true</span>,<br>
+            &nbsp;&nbsp;<span class="c-key">quickLearner</span>: <span class="c-bool">true</span>,<br>
+            &nbsp;&nbsp;<span class="c-key">hireable</span>: <span class="c-fn">function</span>() {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="c-key">return</span> <span class="c-bool">true</span>;<br>
+            &nbsp;&nbsp;}<br>};
+          </div>
+        </div>
+        <div class="hero-btns">
+          <a href="#contact" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Contact Me</a>
+          <a href="https://priya2217.vercel.app/" target="_blank" class="btn btn-outline"><i class="fas fa-globe"></i> My Website</a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/priya2217" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/priya2217/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="mailto:priya.26csb@licet.ac.in"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="hero-img-wrap">
+          <div class="img-glow"></div>
+          <img src="assets/priya.jpg" alt="Priya K" class="hero-img"/>
+          <div class="img-badge"><i class="fas fa-circle-check"></i> Available for hire</div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint"><span>scroll down</span><i class="fas fa-chevron-down"></i></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="sec-tag"><i class="fas fa-user-circle"></i> about_me</div>
+      <h2 class="sec-title">Who <span class="accent">I Am?</span></h2>
+      <p class="sec-sub">A passionate developer who loves building things that matter.</p>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>My name is <strong>Priya K</strong>. I'm a passionate and enthusiastic final-year Computer Science student at Loyola-ICAM College of Engineering and Technology, graduating in June 2026.</p>
+          <p>I specialise in <strong>full-stack web development</strong> — from responsive UIs to solid backend APIs. I have completed an industry internship and built real-world projects including AI-powered platforms and fitness tracking apps.</p>
+          <p>I'm available for <strong>full-time roles, internships, and collaborations</strong> that match my skills. Let's build something great together.</p>
+        </div>
+        <div class="about-right reveal rd1">
+          <div class="illus-wrap">
+            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" class="section-illus">
+              <rect x="40" y="220" width="320" height="12" rx="6" fill="#0C1422"/>
+              <rect x="80" y="232" width="12" height="40" rx="4" fill="#0C1422"/>
+              <rect x="308" y="232" width="12" height="40" rx="4" fill="#0C1422"/>
+              <rect x="90" y="90" width="220" height="140" rx="10" fill="#0A1220" stroke="#00C9FF" stroke-width="2"/>
+              <rect x="98" y="98" width="204" height="116" rx="6" fill="#050911"/>
+              <rect x="112" y="112" width="60" height="5" rx="2" fill="#00C9FF" opacity="0.8"/>
+              <rect x="120" y="124" width="80" height="4" rx="2" fill="#00FFB3" opacity="0.6"/>
+              <rect x="120" y="134" width="100" height="4" rx="2" fill="#7EC8E3" opacity="0.6"/>
+              <rect x="120" y="144" width="70" height="4" rx="2" fill="#00FFB3" opacity="0.6"/>
+              <rect x="120" y="154" width="90" height="4" rx="2" fill="#7EC8E3" opacity="0.5"/>
+              <rect x="120" y="164" width="55" height="4" rx="2" fill="#00C9FF" opacity="0.7"/>
+              <rect x="120" y="174" width="75" height="4" rx="2" fill="#FF9D5C" opacity="0.6"/>
+              <rect x="178" y="184" width="2" height="8" rx="1" fill="#00C9FF" opacity="0.9">
+                <animate attributeName="opacity" values="0;1;0" dur="1s" repeatCount="indefinite"/>
+              </rect>
+              <rect x="190" y="230" width="20" height="14" rx="2" fill="#0C1422"/>
+              <rect x="170" y="242" width="60" height="8" rx="4" fill="#0C1422"/>
+              <rect x="110" y="256" width="180" height="18" rx="5" fill="#0A1220" stroke="#00C9FF" stroke-width="1" opacity="0.6"/>
+              <circle cx="50" cy="120" r="18" fill="#00C9FF" opacity="0.1"/><text x="50" y="126" text-anchor="middle" font-size="14" fill="#00C9FF">&#9883;</text>
+              <circle cx="350" cy="150" r="18" fill="#00FFB3" opacity="0.1"/><text x="350" y="156" text-anchor="middle" font-size="14" fill="#00FFB3">&#127822;</text>
+              <circle cx="55" cy="195" r="14" fill="#FF9D5C" opacity="0.1"/><text x="55" y="200" text-anchor="middle" font-size="10" fill="#FF9D5C">JS</text>
+              <circle cx="345" cy="90" r="14" fill="#00C9FF" opacity="0.1"/><text x="345" y="95" text-anchor="middle" font-size="9" fill="#00C9FF">SQL</text>
+            </svg>
+          </div>
+          <div class="about-cards">
+            <div class="a-card"><i class="fas fa-rocket a-icon"></i><div class="a-num">5<span>+</span></div><div class="a-label">Projects</div></div>
+            <div class="a-card"><i class="fas fa-briefcase a-icon"></i><div class="a-num">1</div><div class="a-label">Internship</div></div>
+            <div class="a-card"><i class="fas fa-medal a-icon"></i><div class="a-num">3</div><div class="a-label">Certificates</div></div>
+            <div class="a-card"><i class="fas fa-star a-icon"></i><div class="a-num">7.2</div><div class="a-label">CGPA</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="sec-tag"><i class="fas fa-briefcase"></i> experience</div>
+      <h2 class="sec-title">Work <span class="accent">Experience</span></h2>
+      <p class="sec-sub">Real-world industry exposure.</p>
+      <div class="exp-layout">
+        <div class="exp-illus reveal">
+          <svg viewBox="0 0 300 320" xmlns="http://www.w3.org/2000/svg" class="section-illus">
+            <ellipse cx="150" cy="300" rx="60" ry="10" fill="#0A1220" opacity="0.4"/>
+            <rect x="135" y="255" width="30" height="50" rx="4" fill="#0C1422"/>
+            <rect x="110" y="295" width="80" height="8" rx="4" fill="#0C1422"/>
+            <rect x="50" y="210" width="200" height="10" rx="5" fill="#0C1422" stroke="#00C9FF" stroke-width="1"/>
+            <rect x="65" y="220" width="10" height="50" rx="3" fill="#0C1422"/>
+            <rect x="225" y="220" width="10" height="50" rx="3" fill="#0C1422"/>
+            <rect x="80" y="140" width="140" height="90" rx="8" fill="#0A1220" stroke="#00C9FF" stroke-width="1.5"/>
+            <rect x="88" y="148" width="124" height="76" rx="5" fill="#050911"/>
+            <rect x="96" y="156" width="50" height="4" rx="2" fill="#00C9FF" opacity="0.9"/>
+            <rect x="104" y="166" width="70" height="3" rx="2" fill="#00FFB3" opacity="0.7"/>
+            <rect x="104" y="175" width="90" height="3" rx="2" fill="#7EC8E3" opacity="0.6"/>
+            <rect x="104" y="184" width="65" height="3" rx="2" fill="#FF9D5C" opacity="0.7"/>
+            <rect x="104" y="193" width="80" height="3" rx="2" fill="#00FFB3" opacity="0.6"/>
+            <rect x="75" y="210" width="150" height="8" rx="4" fill="#0C1422" stroke="#00C9FF" stroke-width="1"/>
+            <circle cx="150" cy="90" r="22" fill="#C8956A"/>
+            <ellipse cx="150" cy="75" rx="22" ry="12" fill="#2A1A0A"/>
+            <rect x="128" y="75" width="8" height="25" rx="4" fill="#2A1A0A"/>
+            <rect x="164" y="75" width="8" height="25" rx="4" fill="#2A1A0A"/>
+            <circle cx="143" cy="92" r="2.5" fill="#0A1220"/>
+            <circle cx="157" cy="92" r="2.5" fill="#0A1220"/>
+            <path d="M143 100 Q150 106 157 100" stroke="#0A1220" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+            <ellipse cx="150" cy="122" rx="22" ry="18" fill="#1A3A5C"/>
+            <rect x="25" y="60" width="65" height="26" rx="6" fill="#0A1220" stroke="#00C9FF" stroke-width="1"/>
+            <text x="57" y="77" text-anchor="middle" font-family="monospace" font-size="9" fill="#00C9FF">Angular</text>
+            <rect x="210" y="60" width="65" height="26" rx="6" fill="#0A1220" stroke="#00FFB3" stroke-width="1"/>
+            <text x="242" y="77" text-anchor="middle" font-family="monospace" font-size="9" fill="#00FFB3">ASP.NET</text>
+            <rect x="20" y="155" width="50" height="26" rx="6" fill="#0A1220" stroke="#FF9D5C" stroke-width="1"/>
+            <text x="45" y="172" text-anchor="middle" font-family="monospace" font-size="9" fill="#FF9D5C">SQL</text>
+            <rect x="230" y="155" width="50" height="26" rx="6" fill="#0A1220" stroke="#7EC8E3" stroke-width="1"/>
+            <text x="255" y="172" text-anchor="middle" font-family="monospace" font-size="9" fill="#7EC8E3">REST</text>
+          </svg>
+        </div>
+        <div class="exp-list">
+          <div class="exp-row reveal">
+            <div class="exp-left">
+              <div class="exp-date">Oct 2025 — Nov 2025</div>
+              <div class="exp-line"></div>
+              <div class="exp-dot"><i class="fas fa-circle"></i></div>
+            </div>
+            <div class="exp-right">
+              <div class="exp-company-logo"><i class="fas fa-building"></i></div>
+              <div class="exp-role">Full Stack Developer Intern</div>
+              <div class="exp-company">Neurealm (Formerly GS Lab / GAVS Technologies)</div>
+              <div class="exp-desc">Worked in the Full Stack Development Team building <strong>BugTracker</strong> — a bug tracking system using ASP.NET Core Web API and Angular. Implemented CRUD operations, RESTful APIs, and database integration to manage bug reports with status and priority tracking.</div>
+              <div class="exp-tags"><span>ASP.NET Core</span><span>Angular</span><span>RESTful API</span><span>SQL</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="sec-tag"><i class="fas fa-code"></i> skills</div>
+      <h2 class="sec-title">Technical <span class="accent">Skills</span></h2>
+      <p class="sec-sub">Technologies I work with regularly.</p>
+      <div class="skills-illus-wrap reveal">
+        <svg viewBox="0 0 800 80" xmlns="http://www.w3.org/2000/svg" class="skills-banner-illus">
+          <defs><linearGradient id="lg1" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#00C9FF" stop-opacity="0"/><stop offset="50%" stop-color="#00C9FF" stop-opacity="0.12"/><stop offset="100%" stop-color="#00C9FF" stop-opacity="0"/></linearGradient></defs>
+          <rect x="0" y="20" width="800" height="40" rx="20" fill="url(#lg1)"/>
+          <rect x="10" y="25" width="80" height="30" rx="15" fill="#0A1220" stroke="#00C9FF" stroke-width="1"/><text x="50" y="45" text-anchor="middle" font-family="monospace" font-size="11" fill="#00C9FF">HTML5</text>
+          <rect x="105" y="25" width="75" height="30" rx="15" fill="#0A1220" stroke="#FF9D5C" stroke-width="1"/><text x="142" y="45" text-anchor="middle" font-family="monospace" font-size="11" fill="#FF9D5C">CSS3</text>
+          <rect x="195" y="25" width="80" height="30" rx="15" fill="#0A1220" stroke="#00FFB3" stroke-width="1"/><text x="235" y="45" text-anchor="middle" font-family="monospace" font-size="11" fill="#00FFB3">React</text>
+          <rect x="290" y="25" width="80" height="30" rx="15" fill="#0A1220" stroke="#7EC8E3" stroke-width="1"/><text x="330" y="45" text-anchor="middle" font-family="monospace" font-size="11" fill="#7EC8E3">Node.js</text>
+          <rect x="385" y="25" width="80" height="30" rx="15" fill="#0A1220" stroke="#C792EA" stroke-width="1"/><text x="425" y="45" text-anchor="middle" font-family="monospace" font-size="11" fill="#C792EA">Python</text>
+          <rect x="480" y="25" width="90" height="30" rx="15" fill="#0A1220" stroke="#00C9FF" stroke-width="1"/><text x="525" y="45" text-anchor="middle" font-family="monospace" font-size="11" fill="#00C9FF">MongoDB</text>
+          <rect x="585" y="25" width="60" height="30" rx="15" fill="#0A1220" stroke="#00FFB3" stroke-width="1"/><text x="615" y="45" text-anchor="middle" font-family="monospace" font-size="11" fill="#00FFB3">SQL</text>
+          <rect x="660" y="25" width="70" height="30" rx="15" fill="#0A1220" stroke="#FF9D5C" stroke-width="1"/><text x="695" y="45" text-anchor="middle" font-family="monospace" font-size="11" fill="#FF9D5C">Figma</text>
+        </svg>
+      </div>
+      <div class="skills-grid reveal">
+        <div class="skill-box"><div class="skill-box-head"><i class="fas fa-terminal"></i> Languages</div><div class="skill-pills"><span><i class="fas fa-code"></i> C</span><span><i class="fab fa-java"></i> Java</span><span><i class="fab fa-python"></i> Python</span><span><i class="fab fa-js"></i> JavaScript</span><span><i class="fas fa-file-code"></i> TypeScript</span></div></div>
+        <div class="skill-box"><div class="skill-box-head"><i class="fas fa-globe"></i> Web Dev</div><div class="skill-pills"><span><i class="fab fa-html5"></i> HTML</span><span><i class="fab fa-css3-alt"></i> CSS</span><span><i class="fab fa-react"></i> React</span><span><i class="fab fa-angular"></i> Angular</span><span><i class="fab fa-node-js"></i> Node.js</span><span><i class="fas fa-server"></i> ASP.NET</span></div></div>
+        <div class="skill-box"><div class="skill-box-head"><i class="fas fa-database"></i> Database</div><div class="skill-pills"><span><i class="fas fa-database"></i> SQL</span><span><i class="fas fa-leaf"></i> MongoDB</span><span><i class="fas fa-bolt"></i> Supabase</span></div></div>
+        <div class="skill-box"><div class="skill-box-head"><i class="fas fa-tools"></i> Tools &amp; Design</div><div class="skill-pills"><span><i class="fab fa-figma"></i> Figma</span><span><i class="fab fa-git-alt"></i> Git</span><span><i class="fas fa-cloud"></i> Vercel</span><span><i class="fas fa-bolt"></i> Vite</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="sec-tag"><i class="fas fa-folder-open"></i> projects</div>
+      <h2 class="sec-title">Selected <span class="accent">Projects</span></h2>
+      <p class="sec-sub">Things I've built and shipped.</p>
+      <div class="proj-illus-wrap reveal">
+        <svg viewBox="0 0 700 80" xmlns="http://www.w3.org/2000/svg" class="skills-banner-illus">
+          <g transform="translate(30,10)"><rect width="60" height="50" rx="5" fill="#0A1220" stroke="#00C9FF" stroke-width="1"/><rect x="0" y="-8" width="30" height="12" rx="4" fill="#00C9FF" opacity="0.4"/><rect x="8" y="15" width="44" height="4" rx="2" fill="#00C9FF" opacity="0.5"/><rect x="8" y="24" width="35" height="4" rx="2" fill="#00FFB3" opacity="0.5"/><rect x="8" y="33" width="40" height="4" rx="2" fill="#7EC8E3" opacity="0.5"/></g>
+          <g transform="translate(150,10)"><rect width="60" height="50" rx="5" fill="#0A1220" stroke="#00FFB3" stroke-width="1"/><rect x="0" y="-8" width="30" height="12" rx="4" fill="#00FFB3" opacity="0.4"/><rect x="8" y="15" width="44" height="4" rx="2" fill="#00FFB3" opacity="0.5"/><rect x="8" y="24" width="30" height="4" rx="2" fill="#00C9FF" opacity="0.5"/><rect x="8" y="33" width="38" height="4" rx="2" fill="#FF9D5C" opacity="0.5"/></g>
+          <g transform="translate(270,10)"><rect width="60" height="50" rx="5" fill="#0A1220" stroke="#FF9D5C" stroke-width="1"/><rect x="0" y="-8" width="30" height="12" rx="4" fill="#FF9D5C" opacity="0.4"/><rect x="8" y="15" width="44" height="4" rx="2" fill="#FF9D5C" opacity="0.5"/><rect x="8" y="24" width="36" height="4" rx="2" fill="#7EC8E3" opacity="0.5"/><rect x="8" y="33" width="28" height="4" rx="2" fill="#00C9FF" opacity="0.5"/></g>
+          <g transform="translate(390,10)"><rect width="60" height="50" rx="5" fill="#0A1220" stroke="#C792EA" stroke-width="1"/><rect x="0" y="-8" width="30" height="12" rx="4" fill="#C792EA" opacity="0.4"/><rect x="8" y="15" width="44" height="4" rx="2" fill="#C792EA" opacity="0.5"/><rect x="8" y="24" width="40" height="4" rx="2" fill="#00FFB3" opacity="0.5"/><rect x="8" y="33" width="32" height="4" rx="2" fill="#FF9D5C" opacity="0.5"/></g>
+          <g transform="translate(510,10)"><rect width="60" height="50" rx="5" fill="#0A1220" stroke="#00C9FF" stroke-width="1"/><rect x="0" y="-8" width="30" height="12" rx="4" fill="#00C9FF" opacity="0.4"/><rect x="8" y="15" width="44" height="4" rx="2" fill="#00C9FF" opacity="0.5"/><rect x="8" y="24" width="34" height="4" rx="2" fill="#00FFB3" opacity="0.5"/><rect x="8" y="33" width="42" height="4" rx="2" fill="#7EC8E3" opacity="0.5"/></g>
+          <line x1="90" y1="35" x2="150" y2="35" stroke="#00C9FF" stroke-width="1" stroke-dasharray="4,3" opacity="0.4"/>
+          <line x1="210" y1="35" x2="270" y2="35" stroke="#00FFB3" stroke-width="1" stroke-dasharray="4,3" opacity="0.4"/>
+          <line x1="330" y1="35" x2="390" y2="35" stroke="#FF9D5C" stroke-width="1" stroke-dasharray="4,3" opacity="0.4"/>
+          <line x1="450" y1="35" x2="510" y2="35" stroke="#C792EA" stroke-width="1" stroke-dasharray="4,3" opacity="0.4"/>
+          <text x="60" y="74" text-anchor="middle" font-family="monospace" font-size="9" fill="#00C9FF" opacity="0.7">PowerRise</text>
+          <text x="180" y="74" text-anchor="middle" font-family="monospace" font-size="9" fill="#00FFB3" opacity="0.7">DigiTrace</text>
+          <text x="300" y="74" text-anchor="middle" font-family="monospace" font-size="9" fill="#FF9D5C" opacity="0.7">BugTracker</text>
+          <text x="420" y="74" text-anchor="middle" font-family="monospace" font-size="9" fill="#C792EA" opacity="0.7">Portfolio</text>
+          <text x="540" y="74" text-anchor="middle" font-family="monospace" font-size="9" fill="#00C9FF" opacity="0.7">TrustAid</text>
+        </svg>
+      </div>
+      <div class="proj-grid">
+        <div class="proj-card reveal"><div class="proj-card-header"><div class="proj-header-left"><span class="proj-num">// 01</span><span class="proj-badge mern">MERN Stack</span></div><div class="proj-header-icons"><a href="https://github.com/priya2217/powerrise" target="_blank"><i class="fab fa-github"></i></a><a href="#"><i class="fas fa-external-link-alt"></i></a></div></div><div class="proj-title"><i class="fas fa-dumbbell"></i> PowerRise</div><div class="proj-desc">Fitness management app built with the MERN stack + Vite. Track workouts, manage routines, and monitor progress through a responsive UI and secure backend APIs.</div><div class="proj-code-block"><div class="pcb-bar"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span><span class="pcb-file">powerrise.js</span></div><pre><span class="c-key">const</span> <span class="c-var">project</span> = {
+  <span class="c-key">name</span>: <span class="c-str">'PowerRise'</span>,
+  <span class="c-key">tools</span>: [<span class="c-str">'MongoDB'</span>, <span class="c-str">'Express'</span>,
+           <span class="c-str">'React'</span>, <span class="c-str">'Node.js'</span>],
+  <span class="c-key">myRole</span>: <span class="c-str">'Full Stack Developer'</span>,
+  <span class="c-key">status</span>: <span class="c-str">'live'</span> <span class="c-bool">&#x2713;</span>
+};</pre></div><div class="proj-footer"><div class="proj-chips"><span>React</span><span>Node.js</span><span>MongoDB</span><span>Vite</span></div></div></div>
+
+        <div class="proj-card reveal rd1"><div class="proj-card-header"><div class="proj-header-left"><span class="proj-num">// 02</span><span class="proj-badge blockchain">Blockchain</span></div><div class="proj-header-icons"><a href="https://github.com/priya2217/digitraceability-" target="_blank"><i class="fab fa-github"></i></a></div></div><div class="proj-title"><i class="fas fa-link"></i> DigiTraceability</div><div class="proj-desc">Blockchain-based food supply chain app for transparent, tamper-proof tracking from production to distribution using Solidity smart contracts on Arbitrum.</div><div class="proj-code-block"><div class="pcb-bar"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span><span class="pcb-file">digi.js</span></div><pre><span class="c-key">const</span> <span class="c-var">project</span> = {
+  <span class="c-key">name</span>: <span class="c-str">'DigiTraceability'</span>,
+  <span class="c-key">tools</span>: [<span class="c-str">'Solidity'</span>, <span class="c-str">'Arbitrum'</span>,
+           <span class="c-str">'Web3'</span>, <span class="c-str">'React'</span>],
+  <span class="c-key">myRole</span>: <span class="c-str">'Full Stack Developer'</span>,
+  <span class="c-key">status</span>: <span class="c-str">'live'</span> <span class="c-bool">&#x2713;</span>
+};</pre></div><div class="proj-footer"><div class="proj-chips"><span>Solidity</span><span>Arbitrum</span><span>Web3</span></div></div></div>
+
+        <div class="proj-card reveal rd2"><div class="proj-card-header"><div class="proj-header-left"><span class="proj-num">// 03</span><span class="proj-badge fullstack">Full Stack</span></div><div class="proj-header-icons"><a href="https://github.com/priya2217/Bug-Tracking-System" target="_blank"><i class="fab fa-github"></i></a></div></div><div class="proj-title"><i class="fas fa-bug"></i> BugTracker</div><div class="proj-desc">Built during internship at Neurealm. A complete bug tracking system with CRUD operations, RESTful APIs, and database integration for managing bug reports.</div><div class="proj-code-block"><div class="pcb-bar"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span><span class="pcb-file">bugtracker.js</span></div><pre><span class="c-key">const</span> <span class="c-var">project</span> = {
+  <span class="c-key">name</span>: <span class="c-str">'BugTracker'</span>,
+  <span class="c-key">tools</span>: [<span class="c-str">'ASP.NET Core'</span>,
+           <span class="c-str">'Angular'</span>, <span class="c-str">'SQL'</span>],
+  <span class="c-key">myRole</span>: <span class="c-str">'Full Stack Developer'</span>,
+  <span class="c-key">status</span>: <span class="c-str">'live'</span> <span class="c-bool">&#x2713;</span>
+};</pre></div><div class="proj-footer"><div class="proj-chips"><span>ASP.NET</span><span>Angular</span><span>SQL</span></div></div></div>
+
+        <div class="proj-card reveal rd3"><div class="proj-card-header"><div class="proj-header-left"><span class="proj-num">// 04</span><span class="proj-badge frontend">Frontend</span></div><div class="proj-header-icons"><a href="https://priya2217.vercel.app/" target="_blank"><i class="fas fa-external-link-alt"></i></a></div></div><div class="proj-title"><i class="fas fa-user-circle"></i> Personal Portfolio</div><div class="proj-desc">A personal portfolio showcasing projects, skills and experience with responsive design, smooth navigation, and intuitive UX. Digital resume for recruiters.</div><div class="proj-code-block"><div class="pcb-bar"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span><span class="pcb-file">portfolio.js</span></div><pre><span class="c-key">const</span> <span class="c-var">project</span> = {
+  <span class="c-key">name</span>: <span class="c-str">'Portfolio'</span>,
+  <span class="c-key">tools</span>: [<span class="c-str">'HTML'</span>, <span class="c-str">'CSS'</span>,
+           <span class="c-str">'JavaScript'</span>],
+  <span class="c-key">myRole</span>: <span class="c-str">'Frontend Developer'</span>,
+  <span class="c-key">status</span>: <span class="c-str">'live'</span> <span class="c-bool">&#x2713;</span>
+};</pre></div><div class="proj-footer"><div class="proj-chips"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></div></div>
+
+        <div class="proj-card reveal rd1 proj-featured"><div class="proj-card-header"><div class="proj-header-left"><span class="proj-num">// 05</span><span class="proj-badge webapp">Web App</span></div><div class="proj-header-icons"><a href="https://github.com/priya2217/TrustAid" target="_blank"><i class="fab fa-github"></i></a><a href="https://trust-aid-lilac.vercel.app" target="_blank"><i class="fas fa-external-link-alt"></i></a></div></div><div class="proj-title"><i class="fas fa-hand-holding-heart"></i> TrustAid</div><div class="proj-desc">An end-to-end donation platform with AI identity verification (OCR + face matching), NGO proof checking, and real-time donor dashboard. Deployed with Supabase backend.</div><div class="proj-code-block"><div class="pcb-bar"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span><span class="pcb-file">trustaid.js</span></div><pre><span class="c-key">const</span> <span class="c-var">project</span> = {
+  <span class="c-key">name</span>: <span class="c-str">'TrustAid'</span>,
+  <span class="c-key">tools</span>: [<span class="c-str">'React'</span>, <span class="c-str">'TypeScript'</span>,
+           <span class="c-str">'Supabase'</span>, <span class="c-str">'Tailwind'</span>],
+  <span class="c-key">myRole</span>: <span class="c-str">'Frontend &amp; UI/UX'</span>,
+  <span class="c-key">status</span>: <span class="c-str">'live'</span> <span class="c-bool">&#x2713;</span>
+};</pre></div><div class="proj-footer"><div class="proj-chips"><span>React</span><span>TypeScript</span><span>Supabase</span><span>Tailwind</span></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section">
+    <div class="container">
+      <div class="sec-tag"><i class="fas fa-graduation-cap"></i> education</div>
+      <h2 class="sec-title">My <span class="accent">Education</span></h2>
+      <p class="sec-sub">Academic background and credentials.</p>
+      <div class="edu-layout">
+        <div class="edu-list reveal">
+          <div class="edu-row">
+            <div class="edu-icon"><i class="fas fa-university"></i></div>
+            <div class="edu-body">
+              <div class="edu-period">Nov 2022 — Jun 2026</div>
+              <div class="edu-deg">BE. Computer Science and Engineering</div>
+              <div class="edu-school">Loyola-ICAM College of Engineering and Technology, Chennai</div>
+              <div class="edu-cgpa"><i class="fas fa-star"></i> CGPA — 7.2</div>
+            </div>
+          </div>
+        </div>
+        <div class="edu-illus reveal rd1">
+          <svg viewBox="0 0 280 220" xmlns="http://www.w3.org/2000/svg" class="section-illus">
+            <ellipse cx="140" cy="130" rx="70" ry="12" fill="#0A1220" stroke="#00C9FF" stroke-width="1.5"/>
+            <polygon points="140,55 210,130 140,110 70,130" fill="#0C1422" stroke="#00C9FF" stroke-width="1.5"/>
+            <rect x="200" y="128" width="4" height="38" rx="2" fill="#00C9FF" opacity="0.7"/>
+            <circle cx="204" cy="170" r="8" fill="#00FFB3"/>
+            <rect x="70" y="155" width="140" height="55" rx="8" fill="#0A1220" stroke="#00FFB3" stroke-width="1.5"/>
+            <rect x="78" y="164" width="124" height="4" rx="2" fill="#00FFB3" opacity="0.6"/>
+            <rect x="86" y="174" width="100" height="3" rx="2" fill="#7EC8E3" opacity="0.5"/>
+            <rect x="86" y="183" width="88" height="3" rx="2" fill="#7EC8E3" opacity="0.4"/>
+            <circle cx="140" cy="198" r="8" fill="#00C9FF" opacity="0.2" stroke="#00C9FF" stroke-width="1"/>
+            <text x="140" y="202" text-anchor="middle" font-size="8" fill="#00C9FF">&#9733;</text>
+            <text x="42" y="82" font-size="14" fill="#00C9FF" opacity="0.5">&#9733;</text>
+            <text x="238" y="72" font-size="11" fill="#00FFB3" opacity="0.5">&#9733;</text>
+            <text x="28" y="155" font-size="9" fill="#FF9D5C" opacity="0.5">&#9733;</text>
+            <text x="252" y="148" font-size="12" fill="#00C9FF" opacity="0.4">&#9733;</text>
+            <rect x="90" y="18" width="100" height="32" rx="16" fill="#0A1220" stroke="#00C9FF" stroke-width="1.5"/>
+            <text x="140" y="39" text-anchor="middle" font-family="monospace" font-size="12" font-weight="bold" fill="#00C9FF">CGPA 7.2</text>
+          </svg>
+        </div>
+      </div>
+      <div class="sec-tag" style="margin-top:3rem"><i class="fas fa-certificate"></i> certifications</div>
+      <h3 class="sec-title-sm">Credentials &amp; <span class="accent">Licences</span></h3>
+      <div class="cert-grid reveal">
+        <div class="cert-card"><div class="cert-icon"><i class="fab fa-redhat"></i></div><div class="cert-body"><div class="cert-num">01</div><div class="cert-name">Red Hat Training Certification</div></div></div>
+        <div class="cert-card"><div class="cert-icon"><i class="fas fa-database"></i></div><div class="cert-body"><div class="cert-num">02</div><div class="cert-name">Database Programming with SQL</div></div></div>
+        <div class="cert-card"><div class="cert-icon"><i class="fab fa-free-code-camp"></i></div><div class="cert-body"><div class="cert-num">03</div><div class="cert-name">Responsive Web Design — freeCodeCamp</div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="sec-tag"><i class="fas fa-envelope"></i> contact</div>
+      <h2 class="sec-title">Get In <span class="accent">Touch</span></h2>
+      <p class="sec-sub">Open to opportunities, collaborations, and conversations.</p>
+     <div class="contact-illus-wrap reveal">
+  <svg viewBox="0 0 700 70" xmlns="http://www.w3.org/2000/svg" class="skills-banner-illus">
+    <rect x="30" y="15" width="640" height="40" rx="20" fill="#0A1220" stroke="#00C9FF" stroke-width="1" opacity="0.35"/>
+    <circle cx="60" cy="35" r="12" fill="#00C9FF" opacity="0.12"/>
+    <text x="60" y="40" text-anchor="middle" font-size="12" fill="#00C9FF">&#9993;</text>
+    <text x="90" y="40" font-family="monospace" font-size="10" fill="#00C9FF" opacity="0.7">priya.kp2217@gmail.com</text>
+    <circle cx="300" cy="35" r="12" fill="#00FFB3" opacity="0.12"/>
+    <text x="300" y="40" text-anchor="middle" font-size="11" fill="#00FFB3">&#9968;</text>
+    <text x="330" y="40" font-family="monospace" font-size="10" fill="#00FFB3" opacity="0.7">Chennai, India</text>
+    <circle cx="500" cy="35" r="12" fill="#C792EA" opacity="0.15" stroke="#C792EA" stroke-width="1"/>
+    <text x="500" y="40" text-anchor="middle" font-family="monospace" font-size="9" font-weight="bold" fill="#C792EA">FL</text>
+    <text x="520" y="40" font-family="monospace" font-size="10" fill="#C792EA" opacity="0.7">freelancer.com/priya2217</text>
+  </svg>
+</div>
+      <div class="contact-grid">
+        <div class="contact-left reveal">
+          <p class="contact-desc">If you have a work opportunity or just want to connect, don't hesitate to reach out. I respond to every message.</p>
+          <div class="contact-items">
+            <a href="mailto:priya.26csb@licet.ac.in" class="c-item"><div class="c-item-icon"><i class="fas fa-envelope"></i></div><div><div class="c-item-label">Email</div><div class="c-item-val">priya.26csb@licet.ac.in</div></div></a>
+            <a href="tel:+919080714132" class="c-item"><div class="c-item-icon"><i class="fas fa-phone"></i></div><div><div class="c-item-label">Phone</div><div class="c-item-val">+91 90807 14132</div></div></a>
+            <a href="https://github.com/priya2217" target="_blank" class="c-item"><div class="c-item-icon"><i class="fab fa-github"></i></div><div><div class="c-item-label">GitHub</div><div class="c-item-val">github.com/priya2217</div></div></a>
+            <a href="https://www.linkedin.com/in/priya2217/" target="_blank" class="c-item"><div class="c-item-icon"><i class="fab fa-linkedin"></i></div><div><div class="c-item-label">LinkedIn</div><div class="c-item-val">linkedin.com/in/priya2217</div></div></a>
+            <a href="https://priya.vercel.app" target="_blank" class="c-item"><div class="c-item-icon"><i class="fas fa-globe"></i></div><div><div class="c-item-label">Website</div><div class="c-item-val">priya.vercel.app</div></div></a>
+          </div>
+        </div>
+        <div class="contact-right reveal rd1">
+          <form class="contact-form" id="contact-form">
+            <div class="form-row">
+              <div class="fg"><label class="fl"><i class="fas fa-user"></i> Your Name</label><input type="text" class="fi" id="fname" placeholder="Enter your name" required/></div>
+              <div class="fg"><label class="fl"><i class="fas fa-envelope"></i> Your Email</label><input type="email" class="fi" id="femail" placeholder="Enter your email" required/></div>
+            </div>
+            <div class="fg"><label class="fl"><i class="fas fa-comment"></i> Your Message</label><textarea class="ft" id="fmsg" placeholder="Tell me about the opportunity..." required></textarea></div>
+            <button type="submit" class="btn btn-primary fsub" id="send-btn"><i class="fas fa-paper-plane"></i> Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-logo"><span>Priya</span>kannan</div>
+      <div class="footer-copy">&#169; 2026 Priya K &#8212; Full Stack Developer, Chennai</div>
+      <div class="footer-socials">
+        <a href="https://github.com/priya2217" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/priya2217/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:priya.26csb@licet.ac.in"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
