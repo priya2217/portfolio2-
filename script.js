@@ -158,7 +158,6 @@ form.addEventListener("submit", function (e) {
     console.error(error);
   });
 });
-
 // ===== SKILL BARS ANIMATION (on scroll) =====
 const skillBoxes = document.querySelectorAll(".skill-box");
 const skillObs = new IntersectionObserver(
