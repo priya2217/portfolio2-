@@ -122,11 +122,15 @@ navLinks.forEach((a) => {
 });
 
 // ===== CONTACT FORM =====
+// ===== CONTACT FORM =====
 const form = document.getElementById("contact-form");
 const sendBtn = document.getElementById("send-btn");
 
+emailjs.init("8SWnbhUILKMElxzxV");
+
 form.addEventListener("submit", function (e) {
   e.preventDefault();
+
   const name = document.getElementById("fname").value.trim();
   const email = document.getElementById("femail").value.trim();
   const msg = document.getElementById("fmsg").value.trim();
@@ -136,13 +140,23 @@ form.addEventListener("submit", function (e) {
   sendBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
   sendBtn.disabled = true;
 
-  setTimeout(() => {
+  emailjs.send("service_ukgh3de", "template_ock7f4d", {
+    name: name,
+    email: email,
+    title: "Portfolio Contact",
+    message: msg,
+  }).then(function () {
     sendBtn.innerHTML = '<i class="fas fa-check-circle"></i> Message Sent!';
     sendBtn.style.background = "transparent";
     sendBtn.style.color = "var(--accent2)";
     sendBtn.style.borderColor = "var(--accent2)";
     form.reset();
-  }, 1500);
+  }, function (error) {
+    sendBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
+    sendBtn.disabled = false;
+    alert("Oops! Something went wrong. Please try again.");
+    console.error(error);
+  });
 });
 
 // ===== SKILL BARS ANIMATION (on scroll) =====
