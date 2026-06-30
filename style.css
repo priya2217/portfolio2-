@@ -390,3 +390,56 @@ footer { padding: 2rem 0; background: var(--bg2); border-top: 1px solid var(--li
   .proj-grid { grid-template-columns: 1fr; }
   .hero-btns { flex-direction: column; }
 }
+.cert-card {
+  display: flex;        /* override block from <a> */
+  text-decoration: none;
+  color: inherit;
+  cursor: none;         /* keeps your custom cursor */
+}
+
+.cert-card:hover {
+  border-color: var(--accent);
+  background: rgba(0,201,255,.03);
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 12px 36px var(--adim);
+}
+
+/* Arrow hint on hover */
+.cert-card::after {
+  content: '↗';
+  position: absolute;
+  top: .8rem;
+  right: .9rem;
+  font-size: .75rem;
+  color: var(--accent);
+  opacity: 0;
+  transition: opacity .2s, transform .2s;
+  transform: translateY(4px);
+}
+
+.cert-card {
+  position: relative;
+  transition: all .25s;
+}
+
+.cert-card:hover::after {
+  opacity: 1;
+  transform: translateY(0);
+}
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.1rem;
+  margin-top: 1.5rem;
+  width: 100%;          /* ← add this */
+  clear: both;          /* ← add this */
+}
+#cert-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(5, 9, 17, .92);
+  backdrop-filter: blur(12px);
+  z-index: 9000;
+  align-items: center;
+  justify-content: center;
+}

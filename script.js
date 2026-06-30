@@ -140,23 +140,28 @@ form.addEventListener("submit", function (e) {
   sendBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
   sendBtn.disabled = true;
 
-  emailjs.send("service_ukgh3de", "template_ock7f4d", {
-    name: name,
-    email: email,
-    title: "Portfolio Contact",
-    message: msg,
-  }).then(function () {
-    sendBtn.innerHTML = '<i class="fas fa-check-circle"></i> Message Sent!';
-    sendBtn.style.background = "transparent";
-    sendBtn.style.color = "var(--accent2)";
-    sendBtn.style.borderColor = "var(--accent2)";
-    form.reset();
-  }, function (error) {
-    sendBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
-    sendBtn.disabled = false;
-    alert("Oops! Something went wrong. Please try again.");
-    console.error(error);
-  });
+  emailjs
+    .send("service_ukgh3de", "template_ock7f4d", {
+      name: name,
+      email: email,
+      title: "Portfolio Contact",
+      message: msg,
+    })
+    .then(
+      function () {
+        sendBtn.innerHTML = '<i class="fas fa-check-circle"></i> Message Sent!';
+        sendBtn.style.background = "transparent";
+        sendBtn.style.color = "var(--accent2)";
+        sendBtn.style.borderColor = "var(--accent2)";
+        form.reset();
+      },
+      function (error) {
+        sendBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
+        sendBtn.disabled = false;
+        alert("Oops! Something went wrong. Please try again.");
+        console.error(error);
+      },
+    );
 });
 // ===== SKILL BARS ANIMATION (on scroll) =====
 const skillBoxes = document.querySelectorAll(".skill-box");
@@ -193,3 +198,24 @@ console.log(
   "color: #00FFB3; font-size: 12px;",
 );
 console.log("%c 🐙 github.com/priya2217", "color: #00FFB3; font-size: 12px;");
+// ==qa=== CERT LIGHTBOX =====
+function openCert(src) {
+  const modal = document.getElementById("cert-modal");
+  const img = document.getElementById("cert-modal-img");
+  img.src = src;
+  modal.style.display = "flex";
+  document.body.style.overflow = "hidden";
+}
+
+function closeCert() {
+  document.getElementById("cert-modal").style.display = "none";
+  document.body.style.overflow = "";
+}
+
+document.getElementById("cert-modal").addEventListener("click", function (e) {
+  if (e.target === this) closeCert();
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") closeCert();
+});
